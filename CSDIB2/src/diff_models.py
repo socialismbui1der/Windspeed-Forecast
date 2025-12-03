@@ -162,7 +162,7 @@ class ResidualBlock(nn.Module):
             edge_index=edge_index, 
             edge_weight=edge_weight, 
             nheads=nheads,
-            num_layers = 2
+            num_layers = 1
         )
 
         self.norm_time = nn.LayerNorm(channels)
