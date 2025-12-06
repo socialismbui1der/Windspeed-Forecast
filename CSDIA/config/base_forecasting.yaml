@@ -1,0 +1,30 @@
+
+#type: args
+
+train:
+  epochs: 8
+  batch_size: 16
+  lr: 1.2e-3
+  itr_per_epoch: 1.0e+8
+
+diffusion:
+  layers: 4 
+  channels: 64
+  nheads: 8
+  diffusion_embedding_dim: 128
+  beta_start: 0.0001
+  beta_end: 0.5
+  num_steps: 30
+  schedule: "cos-sin"
+  is_linear: False
+
+model:
+  is_unconditional: 0
+  timeemb: 96
+  featureemb: 32
+  target_strategy: "test"
+  num_sample_features: 64
+
+graph:
+  station_emb_dim: 32
+  num_stations: 108
